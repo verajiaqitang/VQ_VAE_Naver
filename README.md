@@ -1,5 +1,7 @@
 # VQ_VAE_Naver
-This project is the implementation for VQ VAE
+This project is the implementation for VQ VAE that is combined Vector quantistaions with Variational encoder. 
+
+Getting Started
 
 The file 'VQ_VAE_model.md' is the model for VQ VAE
 
