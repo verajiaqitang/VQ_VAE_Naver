@@ -54,33 +54,7 @@ def E_distance(x1, x2):
     d2 = torch.stack([x2]*a)
     distance=torch.sum((d1-d2)**2, 2).squeeze()
     return distance
-'''
-class Encoder(nn.Module):
-    def __init__(self, input_dim, emb_dim):
-        super(Encoder, self).__init__()
-        self.fc1 = nn.Linear(input_dim, 400)
-        self.fc2 = nn.Linear(400, emb_dim)
-
-        self.relu = nn.ReLU()
-
-    def forward(self, x):
-        h1 = self.relu(self.fc1(x))
-        return self.fc2(h1)
-
-
-class Decoder(nn.Module):
-    def __init__(self, emb_dim, input_dim):
-        super(Decoder, self).__init__()
-        self.fc1 = nn.Linear(emb_dim, 400)
-        self.fc2 = nn.Linear(400, input_dim)
-
-        self.relu = nn.ReLU()
-        self.sigmoid = nn.Sigmoid()
-
-    def forward(self, x):
-        h = self.relu(self.fc1(x))
-        return self.sigmoid(self.fc2(h))
-'''   
+ 
 class VQVAE(nn.Module):
     def __init__(self, emb_dim, emb_num):
         super(VQVAE, self).__init__()
