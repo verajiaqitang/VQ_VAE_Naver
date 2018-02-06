@@ -1,10 +1,18 @@
 # VQ_VAE_Naver
-This project is the implementation for VQ VAE that is combined Vector quantistaions with Variational encoder. 
+This project is the implementation for VQ VAE that is combined Vector quantistaions with Variational encoder. In
+this project I used Pytorch for implementing the model.
 
-Getting Started
+### Prerequisites
 
-The file 'VQ_VAE_model.md' is the model for VQ VAE
+python 3
+pytorch
+jupyter notebook
 
-I put training set and testing set into the file 'main.md' which also include my loss-function and main function
+## Getting start
+ the file 'VQ_VAE_model.md' is the model of VQ_VAE
 
-After runing this project for the sample I used, the result has been presented by following pictures
+ the file'Main.md' includes the traning set , testing set and also loss function
+
+### training and testing
+
+the training set and testing set have been showed in the main.md file which include the result of samples
