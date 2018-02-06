@@ -70,12 +70,12 @@ def get_loss(data, vqvae):
     # reconstruction loss
     reconst_loss = F.binary_cross_entropy(recon_data, data)
 
-    # cluster assignment loss
+    # commitment loss
     detach_z_q = Variable(vqvae.z_q.data, requires_grad=False)
     cls_assg_loss = torch.sum((vqvae.z_e - detach_z_q).pow(2))
     cls_assg_loss /= args.batch_size
 
-    # cluster update loss
+    # loss for updating dictionary
     detach_z_e = Variable(vqvae.z_e.data, requires_grad=False)
     z_q = vqvae.layer(detach_z_e)
     cls_dist_loss = torch.sum((detach_z_e - z_q).pow(2))
