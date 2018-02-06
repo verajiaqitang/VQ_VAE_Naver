@@ -16,3 +16,7 @@ jupyter notebook
 ### training and testing
 
 the training set and testing set have been showed in the main.md file which include the result of samples
+
+## Authors
+
+* **Jiaqi Tang** - *Initial work* - [VQ_VAE_Naver](https://github.com/verajiaqitang/VQ_VAE_Naver)
